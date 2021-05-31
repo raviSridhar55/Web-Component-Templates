@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+:root {
+  --color-1: #1b1a17;
+  --color-2: #a35709;
+  --color-3: #ff8303;
+  --color-4: #f0e3ca;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.4rem;
+  color: var(--color-4);
+  height: 200vh;
+}
+
+a {
+  color: var(--color-4);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#navbar {
+  height: 70px;
+  width: 100vw;
+  padding: 10px 30px;
+  background-color: var(--color-1);
+  margin: auto;
+  position: fixed;
+}
+
+.navbar {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.fas {
+  transition: all 0.4s ease-in-out;
+}
+.fas:hover {
+  animation: logo-animation;
+  animation-duration: 0.6s;
+}
+
+@keyframes logo-animation {
+  25% {
+    transform: scale(1.2) rotate(-15deg);
+  }
+  75% {
+    transform: scale(1.2) rotate(15deg);
+  }
+}
+
+.title {
+  margin-left: 5px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.link {
+  padding: 5px 15px;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#hero {
+  height: 100vh;
+  background-color: var(--color-3);
+  display: grid;
+  place-items: center;
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  text-transform: capitalize;
+}
+
+a:hover {
+  animation-name: link-animation;
+  animation-duration: 1s;
+}
+
+@keyframes link-animation {
+  0% {
+    color: var(--color-2);
+    border-bottom: 1px var(--color-2) solid;
+  }
+
+  50% {
+    color: var(--color-3);
+    border-bottom: 2px var(--color-3) solid;
+  }
+
+  80% {
+    color: var(--color-2);
+    border-bottom: 3px var(--color-2) solid;
+  }
+}
+
+@media (max-width: 414px) {
+  #navbar {
+    height: 120px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .hero {
+    width: 300px;
+    display: block;
+  }
+
+  p {
+    text-align: left;
+  }
+}

@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 100vh;
+  width: 80px;
+  background-color: black;
+  color: beige;
+  -webkit-box-shadow: 9px 10px 185px -23px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 10px 185px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 10px 185px -23px rgba(0, 0, 0, 0.75);
+}
+.box-1 {
+  height: 33%;
+  background-color: blanchedalmond;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.box-2 {
+  height: 33%;
+  background-color: #008bff;
+  width: 100%;
+  transition: all 3s ease-in-out;
+}
+
+.box-3 {
+  height: 34%;
+  background-color: yellow;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+.show {
+  display: none;
+}
+
+.box-1:hover,
+.box-2:hover,
+.box-3:hover {
+  width: 200px;
+  background-color: blueviolet;
+}

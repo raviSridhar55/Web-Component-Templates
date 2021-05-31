@@ -1,0 +1,45 @@
+* {
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+a {
+  color: aliceblue;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+body {
+  background: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social {
+  height: auto;
+  background-color: brown;
+  transition: 0.7s ease-in-out all;
+  flex: 1;
+}
+
+.social .fab {
+  border: 3px solid white;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  padding: auto;
+  transition: 0.7s ease-in-out all;
+}
+
+.social .fab:hover {
+  background-color: #f0274f;
+  color: black;
+}
+
+.social:hover {
+  background-color: crimson;
+}

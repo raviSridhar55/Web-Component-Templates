@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  height: 150vh;
+  background-color: black;
+  display: flex;
+}
+
+.left {
+  height: 100vh;
+  width: 35%;
+  background-color: blanchedalmond;
+}
+.rightmost {
+  height: 100vh;
+  width: 35%;
+  background-color: blue;
+}
+
+.right {
+  height: 100vh;
+  width: 40%;
+  background-color: blueviolet;
+  overflow-y: auto;
+}
+
+.right::-webkit-scrollbar {
+  width: 5px;
+  background-color: black;
+  color: aliceblue;
+}
+.right::-webkit-scrollbar-button {
+  width: 5px;
+  background-color: aliceblue;
+}
+
+.right::-webkit-scrollbar-thumb {
+  width: 4px;
+  background-color: aqua;
+}
+
+.box {
+  height: 400px;
+  width: 400px;
+  margin: 20px auto;
+  background-color: burlywood;
+}

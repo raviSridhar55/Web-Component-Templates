@@ -1,0 +1,126 @@
+body {
+  font-family: system-ui;
+  background: #232323;
+  margin: 0;
+  color: white;
+  width: 35rem;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rvp-life-to-ideas {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.rvp-life-to-ideas span {
+  color: green;
+  height: 2rem;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+}
+
+.rvp-span-1 {
+  padding: 0 0.8rem;
+}
+
+.rvp-span-1 div {
+  animation-name: role-down;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  text-align: left;
+}
+
+@keyframes role-down {
+  0% {
+    transform: translateY(-2.4rem);
+  }
+  10% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(0rem);
+  }
+  60% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(-2.4rem);
+  }
+}
+
+.rvp-span-2 {
+  width: auto;
+  padding: 0 0.5rem;
+  transform: translateX(-2.3rem);
+}
+
+.rvp-span-2 div:nth-child(1) {
+  text-align: right;
+}
+
+.rvp-span-2 div {
+  animation-name: role-up;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  text-align: left;
+}
+
+@keyframes role-up {
+  0% {
+    transform: translateY(0rem);
+  }
+  13% {
+    transform: translateY(-2.3rem);
+  }
+  50% {
+    transform: translateY(-2.3rem);
+  }
+  58% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.rvp-span-to {
+  color: white !important;
+  width: auto;
+  animation-name: slide-left;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  text-align: left;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-0.4rem);
+  }
+  11% {
+    transform: translateX(-2.1rem);
+  }
+  50% {
+    transform: translateX(-2.1rem);
+  }
+  57% {
+    transform: translateX(-0.4rem);
+  }
+  100% {
+    transform: translateX(-0.4rem);
+  }
+}
+
+.rvp-span-dot {
+  color: var(--white) !important;
+  width: auto;
+  transform: translateX(-2.7rem);
+}
